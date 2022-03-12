@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/app.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "App",
+          "members": [
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Welcome to Lightning Web Components!\""
+            },
+            {
+              "kind": "field",
+              "name": "showFeatures",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "features",
+              "description": "Getter for the features property"
+            }
+          ],
+          "superclass": {
+            "name": "LightningElement",
+            "package": "lwc"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "App",
+            "module": "src/app.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/child.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Show an item",
+          "name": "Child",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            }
+          ],
+          "superclass": {
+            "name": "LightningElement",
+            "package": "lwc"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "Child",
+            "module": "src/child.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.stories.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "story"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "story",
+          "declaration": {
+            "name": "story",
+            "module": "src/index.stories.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/todoList.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Show an item",
+          "name": "todoList",
+          "members": [
+            {
+              "kind": "field",
+              "name": "isShow",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "todos",
+              "type": {
+                "text": "array"
+              },
+              "default": "[\r\n    {\r\n      id: 1,\r\n      title: \"feed cat\",\r\n      description: \"felix\",\r\n      priority: 'high',\r\n      created: Date.now()\r\n    },\r\n    { \r\n      id: 2,\r\n      title: \"play xbox\",\r\n      description: \"fifa22\",\r\n      priority: 'low',\r\n      created: Date.now()\r\n    },\r\n    { \r\n      id: 3,\r\n      title: \"go shopping\",\r\n      description: \"hleb\",\r\n      priority: 'medium',\r\n      created: Date.now()\r\n    }\r\n  ]"
+            },
+            {
+              "kind": "method",
+              "name": "handleClose"
+            },
+            {
+              "kind": "method",
+              "name": "handleShow"
+            }
+          ],
+          "superclass": {
+            "name": "LightningElement",
+            "package": "lwc"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "todoList",
+            "module": "src/todoList.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/todoItem.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Show an item",
+          "name": "todoItem",
+          "members": [
+            {
+              "kind": "field",
+              "name": "todo",
+              "type": {
+                "text": "object"
+              },
+              "default": "{}"
+            }
+          ],
+          "superclass": {
+            "name": "LightningElement",
+            "package": "lwc"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "todoItem",
+            "module": "src/todoItem.js"
+          }
+        }
+      ]
+    }
+  ]
+}
